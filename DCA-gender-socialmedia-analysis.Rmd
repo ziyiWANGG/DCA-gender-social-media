@@ -6,5 +6,21 @@ date: "2026-03-06"
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+
+options(scipen = 999)
+
+d_socialmedia <- read_csv('../data/BES-2017-f2f-gender-fb-tw.csv')
 ```
 
+# Hypothesis
+H1 gender is associated with Facebook use
+
+```{r}
+chisq.test(
+  d_socialmedia$Gender,
+  d_socialmedia$Use_Facebook
+)
+```
+# Findings
+Gender is associated with Facebook use, X2(df = 1, n = 2189) = 18.046, p < .001.
