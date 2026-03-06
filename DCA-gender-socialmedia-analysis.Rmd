@@ -1,0 +1,10 @@
+---
+title: "DCA-gender-socialmedia-project"
+output: html_document
+date: "2026-03-06"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
